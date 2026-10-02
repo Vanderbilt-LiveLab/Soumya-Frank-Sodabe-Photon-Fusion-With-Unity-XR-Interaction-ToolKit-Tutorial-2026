@@ -309,3 +309,15 @@ If an observation does not match, start with the corresponding part of the setup
 Once you can follow this loop, read the linked scripts alongside the sections. Focus first on who makes each decision and what information crosses the network. Then follow the callbacks to see when those decisions happen. The main lesson is visible in the game itself: your rig supplies local tracking, your avatar shares your presence, the controller coordinates the room, and each interaction shares only the information it needs.
 
 Image provenance and recapture instructions are in [README image sources](docs/images/README.md).
+
+## 8. Game Scene exercise: shooting and scores
+
+In Game Scene, press either controller trigger to fire one sphere from that hand.
+A torso hit gives the shooter **+1** and the target **−1**. Both players see the
+networked scores on the world-space scoreboard. Scores reset for each new round.
+Shooting is off in Lobby; continue using the existing Lobby connection flow to enter Game.
+
+This exercise adds three short gameplay scripts in `Assets/ShootingDemo/Scripts`.
+The existing connection and scene-transition scripts are unchanged.
+Read [Shooting and scores: teaching guide](docs/shooting-and-scores.md) for the
+script order, RPC explanation, Inspector setup, and two-headset checklist.
